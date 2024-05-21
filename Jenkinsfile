@@ -4,9 +4,24 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Run Python script directly without using nohup
-                bat 'python hello.py'
+                echo 'Building...'
             }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo "Done!"
         }
     }
 }
