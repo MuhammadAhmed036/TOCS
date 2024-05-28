@@ -3,48 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Premium Watches</title>
+    <title>Home - Shopping Centre</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: 100px auto 0 auto;
-            overflow: hidden;
+        .navbar {
+            margin-bottom: 20px;
         }
         .main-content {
-            padding: 20px 0;
-            text-align: center;
+            padding: 60px 0;
         }
         .main-content h2 {
             font-size: 2.5em;
@@ -55,34 +26,10 @@
             line-height: 1.6;
             margin-bottom: 40px;
         }
-        .watch-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .watch-item {
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            width: calc(33% - 40px);
-            box-sizing: border-box;
+        .card {
             transition: transform 0.2s;
         }
-        .watch-item img {
-            max-width: 100%;
-            height: auto;
-        }
-        .watch-item h3 {
-            margin: 15px 0;
-            font-size: 1.5em;
-        }
-        .watch-item p {
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-        .watch-item:hover {
+        .card:hover {
             transform: translateY(-10px);
         }
         footer {
@@ -97,46 +44,71 @@
     </style>
 </head>
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <h1>Premium Watches</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <a class="navbar-brand" href="#">Shopping Centre</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="container">
-        <div class="main-content">
-            <h2>Welcome to Our Exclusive Watch Collection</h2>
-            <p>Discover our premium range of watches crafted with precision and elegance. Whether you are looking for a stylish accessory or a functional timepiece, we have the perfect watch for you.</p>
-            <div class="watch-grid">
-                <div class="watch-item">
-                    <img src="watch1.jpg" alt="Luxury Watch 1">
-                    <h3>Luxury Watch 1</h3>
-                    <p>test classes</p>
+    <div class="container main-content">
+        <h2>Welcome to Our Shopping Centre</h2>
+        <p>Discover our range of stores and services, crafted to provide you with an exceptional shopping experience. Whether you're looking for fashion, electronics, or gourmet dining, we have it all.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="watch1.jpg" class="card-img-top" alt="Store 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Store 1</h5>
+                        <p class="card-text">Discover the latest trends and styles in fashion at Store 1.</p>
+                    </div>
                 </div>
-                <div class="watch-item">
-                    <img src="watch2.jpg" alt="Luxury Watch 2">
-                    <h3>Luxury Watch 2</h3>
-                    <p>Crafted with the finest materials, this watch is perfect for any occasion.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="watch2.jpg" class="card-img-top" alt="Store 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Store 2</h5>
+                        <p class="card-text">Explore a wide range of electronics and gadgets at Store 2.</p>
+                    </div>
                 </div>
-                <div class="watch-item">
-                    <img src="watch3.jpg" alt="Luxury Watch 3">
-                    <h3> beauty Watch 3</h3>
-                    <p>curren and functionality, this watch is a must-have.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="watch3.jpg" class="card-img-top" alt="Store 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Store 3</h5>
+                        <p class="card-text">Indulge in gourmet dining experiences at Store 3.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Para</p>
+        <p>&copy; 2024 Shopping Centre</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
