@@ -3,68 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Our Hospital</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>About</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
-        .navbar {
-            margin-bottom: 20px;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
         }
-        .main-content {
-            padding: 60px 0;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Our Hospital</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container main-content">
-        <h2>About Us</h2>
-        <p>Welcome to Our Hospital, where we prioritize the health and well-being of our community. Our hospital is equipped with the latest medical technology and staffed by a team of dedicated healthcare professionals committed to providing the highest quality care.</p>
-        <p>Our mission is to deliver compassionate and comprehensive healthcare services, ensuring that every patient receives personalized attention and the best possible treatment. We strive to create a healing environment that fosters comfort, respect, and trust.</p>
-        <p>Our hospital offers a wide range of medical services, from routine check-ups and preventive care to advanced surgical procedures and emergency care. We are here to support you and your family's health and wellness journey.</p>
-    </div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <p>My name is Malik Ahmed. I am a web developer with a passion for creating beautiful and functional websites.</p>
+    </main>
     <footer>
-        <p>&copy; 2024 Our Hospital</p>
+        <p>&copy; 2024 Ahmed's. All rights reserved.</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
