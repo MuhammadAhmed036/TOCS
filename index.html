@@ -3,156 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Hospital</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
-        .navbar {
-            margin-bottom: 20px;
-        }
-        .hero-section {
-            background: url('https://via.placeholder.com/1920x800') no-repeat center center;
-            background-size: cover;
+        header {
+            background-color: #333;
             color: #fff;
+            padding: 10px 0;
             text-align: center;
-            padding: 100px 0;
         }
-        .hero-section h1 {
-            font-size: 4em;
-            margin-bottom: 20px;
+        nav ul {
+            list-style: none;
+            padding: 0;
         }
-        .hero-section p {
-            font-size: 1.5em;
-            margin-bottom: 40px;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
-        .info-section {
-            padding: 60px 0;
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
         }
-        .info-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .info-section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-        .card {
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-10px);
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Our Hospital</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="hero-section">
-        <div class="container">
-            <h1>Welcome to Our Hospital</h1>
-            <p>Providing compassionate and comprehensive healthcare services.</p>
-            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
-        </div>
-    </div>
-
-    <div class="container info-section" id="about">
-        <h2>About Us</h2>
-        <p>Our hospital is committed to providing high-quality medical care with a patient-centered approach. Our team of dedicated professionals works tirelessly to ensure the well-being and comfort of our patients.</p>
-    </div>
-
-    <div class="container info-section" id="services">
-        <h2>Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 1">
-                    <div class="card-body">
-                        <h5 class="card-title">General Medicine</h5>
-                        <p class="card-text">Comprehensive healthcare services for all ages, from routine check-ups to complex medical conditions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Surgical Services</h5>
-                        <p class="card-text">State-of-the-art surgical facilities and experienced surgeons ensuring the best outcomes for our patients.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Emergency Care</h5>
-                        <p class="card-text">24/7 emergency services with prompt and effective treatment for all types of medical emergencies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container info-section" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need assistance, please don't hesitate to contact us. Our team is here to help you with all your healthcare needs.</p>
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email
-                    :</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    
-        <footer>
-            <p>&copy; 2024 Our Hospital</p>
-        </footer>
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    </html>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to My Website</h1>
+        <p>Hello, my name is Malik Ahmed. This is the home page of my personal website.</p>
+        <p>Check The Website</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Malik Ahmed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
